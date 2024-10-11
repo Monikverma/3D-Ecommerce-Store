@@ -1,0 +1,13 @@
+.branded{
+    border: 2px solid white;
+    max-width: 100%;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 3fr)); 
+    gap: 20px;
+}
+ h2{
+  font-size: 50px;
+  color: aliceblue;
+}

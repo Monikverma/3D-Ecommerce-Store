@@ -1,0 +1,150 @@
+/* Sign-Up Form Styling */
+
+.form {
+  position: fixed; /* Make the form fixed on the screen */
+  top: 50%; /* Position it in the center vertically */
+  left: 50%; /* Position it in the center horizontally */
+  transform: translate(-50%, -50%); /* Offset the form to perfectly center it */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between elements */
+  width: 550px; /* Fixed width for the form */
+  padding: 30px; /* Padding around the form content */
+  border-radius: 15px; /* Rounded corners */
+  background-color: #000000; /* Background color */
+  color: #ffffff; /* Text color */
+  border: 1px solid #333; /* Border style */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  z-index: 1000; /* Ensure it appears on top of other content */
+  visibility: visible; /* Make it visible */
+}
+
+/* Title Styling */
+.title {
+  font-size: 32px; /* Font size for title */
+  font-weight: bold; /* Make it bold */
+  color: #00e5ff; /* Title color */
+  text-align: center; /* Center the title */
+  margin-bottom: 10px; /* Bottom margin for spacing */
+}
+
+/* Message Styling */
+.message {
+  font-size: 14px; /* Font size for the message */
+  color: rgba(255, 255, 255, 0.7); /* Light color for message */
+  text-align: center; /* Center the message */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Flexbox for input fields */
+.flex {
+  display: flex; /* Use flexbox */
+  gap: 10px; /* Space between input fields */
+}
+
+/* Label Styling */
+.form label {
+  position: relative; /* Positioning for floating label effect */
+  display: block; /* Block display */
+  margin-bottom: 20px; /* Space below each label */
+}
+
+/* Input Field Styling */
+.form label .input {
+  background-color: #1c1c1c; /* Input background color */
+  color: #ffffff; /* Text color in input */
+  width: 100%; /* Full width */
+  padding: 15px 10px; /* Padding inside input */
+  outline: none; /* No outline on focus */
+  border: 1px solid rgba(105, 105, 105, 0.4); /* Border styling */
+  border-radius: 10px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+/* Floating Label Styling */
+.form label .input + span {
+  color: rgba(255, 255, 255, 0.7); /* Label color */
+  position: absolute; /* Absolute positioning */
+  left: 15px; /* Left offset */
+  top: 14px; /* Top offset */
+  font-size: 0.85em; /* Font size */
+  transition: all 0.3s ease; /* Transition for floating effect */
+  pointer-events: none; /* Prevent interaction */
+}
+
+/* Input Focus Styling */
+.form label .input:focus {
+  border-color: #00e5ff; /* Border color on focus */
+}
+
+/* Floating Label on Focus */
+.form label .input:focus + span,
+.form label .input:valid + span {
+  color: #00e5ff; /* Change color on focus or valid */
+  top: -10px; /* Move label up */
+  left: 10px; /* Move label left */
+  font-size: 0.75em; /* Smaller font size */
+  font-weight: 600; /* Bold */
+  background-color: #1a1a1a; /* Background for label */
+  padding: 0 5px; /* Padding around label */
+}
+
+/* Submit Button Styling */
+.submit {
+  border: none; /* No border */
+  outline: none; /* No outline */
+  padding: 12px; /* Padding for button */
+  border-radius: 10px; /* Rounded corners */
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+  background: linear-gradient(to right, #007bff, #00e5ff); /* Gradient background */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Submit Button Hover Effect */
+.submit:hover {
+  background: linear-gradient(to right, #0056b3, #00b3cc); /* Darker gradient on hover */
+}
+
+/* Login Link Styling */
+.Login {
+  font-size: 14px; /* Font size */
+  color: rgba(255, 255, 255, 0.7); /* Color */
+  text-align: center; /* Center the text */
+  margin-top: 10px; /* Top margin for spacing */
+}
+
+/* Link Styling */
+.Login a {
+  color: #00e5ff; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+/* Link Hover Effect */
+.Login a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .form {
+    padding: 20px; /* Adjust padding */
+    max-width: 90%; /* Responsive width */
+    margin: 30px auto; /* Center the form */
+  }
+
+  .title {
+    font-size: 28px; /* Smaller title on mobile */
+  }
+
+  .submit {
+    font-size: 16px; /* Smaller button text */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .flex {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Space between inputs */
+  }
+}

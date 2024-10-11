@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    background-color: #f4f4f4; /* Light gray background for better contrast */
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Admin Login Styles */
+  .login-container {
+    max-width: 400px; /* Maximum width for the login form */
+    margin: 100px auto; /* Center the login form vertically and horizontally */
+    padding: 20px;
+    background-color: white; /* White background for the login form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .login-container h2 {
+    text-align: center; /* Center the heading */
+  }
+  
+  input {
+    display: block; /* Stack inputs vertically */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside the input */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button {
+    width: 100%; /* Full width for the button */
+    padding: 10px; /* Padding for the button */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red; /* Red text for error messages */
+    text-align: center; /* Center the error message */
+  }
+  
+  /* Admin Dashboard Styles */
+  .admin-dashboard {
+    
+    padding: 20px;
+    background-color: #4b4b4b; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the dashboard */
+    z-index: 1000;
+  }
+  
+  .admin-dashboard h1 {
+    text-align: center; /* Center the title */
+  }
+  
+  button.logout-btn {
+    margin-bottom: 20px; /* Space below the logout button */
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+  }
+  
+  button.logout-btn:hover {
+    background-color: #c82333; /* Darker shade on hover */
+  }
+  
+  
+  
+  button.remove-btn {
+    height: 50px;
+    width: 80px;
+    background-color: #fd6500; /* Color for the remove button */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 5px 10px; /* Padding for the button */
+  }
+  
+  button.remove-btn:hover {
+    background-color: #ffffff; /* Darker shade on hover */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 500px) {
+    .login-container {
+      width: 90%; /* Make login form responsive */
+    }
+  }
+  .admin-content{
+    display: flex;
+    gap: 50px;
+  }
+  .admin-content img{
+    gap: 50px;
+  }

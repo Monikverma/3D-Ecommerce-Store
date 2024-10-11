@@ -1,0 +1,158 @@
+/* Set black background for the entire page */
+body {
+  background: linear-gradient(150deg, #000000 50%, #000000 80%);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading Style */
+.heading {
+  margin-top: 50px;
+  border: 2px solid #ccc;
+  height: 600px;
+  padding: 20px;
+  text-align: center; /* Center the content */
+  position: relative; /* Relative positioning for better layout control */
+}
+
+/* H1 styling */
+.heading h1 {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Style for the multiple images inside the heading */
+.trendi {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  justify-content: start;
+  align-items: start;
+
+  gap: 15px; /* Space between images */
+}
+
+.trendi img {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  height: 200px;
+  cursor:pointer;
+  gap: 5px;
+  width: 300px;
+  align-items: start;
+  object-fit: contain;
+  border-radius: 8px;
+}
+img:hover{
+  transform: scale(1.05);
+}
+
+/* Icon Styling */
+.icons {
+  margin-left: 10px;
+  color: #ff3300;
+  filter: drop-shadow(0 0px 15px #ff5100);
+}
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Gallery Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Equal-sized grid columns */
+  gap: 20px; /* Spacing between gallery items */
+  padding: 20px;
+  margin-top: 30px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+}
+
+div.gallery:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  border-color: #777;
+}
+
+/* Images inside the Gallery */
+div.gallery img {
+  width: 100%;
+  height: 250px; /* Equal height for all images */
+  object-fit: cover; /* Ensures image aspect ratio is maintained */
+  border-bottom: 1px solid #333;
+}
+
+/* Image Descriptions */
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+.responsive {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Button Styles */
+.add-to-cart-btn {
+  display: block;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #d15401;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #3affa3;
+}
+
+/* Media Query for Mobile */
+@media only screen and (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .add-to-cart-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .trendi {
+    flex-direction: column; /* Stack images vertically on mobile */
+  }
+
+  .trendi img {
+    height: 60px; /* Adjust height for smaller screens */
+  }
+}
+.clearfix h1{
+  border: 2px solid white;
+  height: 500px;
+}

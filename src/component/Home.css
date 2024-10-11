@@ -1,0 +1,125 @@
+/* Styling for the home section */
+.homes {
+    position: relative;
+    height: 60vh; /* Increased height for a more prominent look */
+    width: 100%; /* Full width for more coverage */
+    background: linear-gradient(170deg, #000000 30%, #000000 85%); /* Darker gradient for a modern look */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    border-radius: 20px; /* Rounded edges for the container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
+    overflow: hidden; /* Hide overflow to manage slideshow elements */
+}
+
+/* Slideshow container */
+#slideshow {
+    overflow: hidden;
+    height: 650px; /* Set a fixed height for the container */
+    width: 100%; /* Full width for slideshow container */
+    margin: 50px auto;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3); /* Stronger shadow for a richer look */
+    background: linear-gradient(135deg, #000000 0%, #fcb69f 100%); /* Enhanced gradient */
+    position: relative;
+    margin-top: 40px; /* Added margin for better spacing */
+}
+
+/* Individual slides */
+.slide {
+    float: left;
+    height: 650px; /* Fixed height for consistency */
+    width: 100%; /* Make the slides responsive and cover full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Wrapper for the sliding animation */
+.slide-wrapper {
+    display: flex;
+    width: calc(100% * 6); /* Total width based on the number of slides */
+    animation: slide 25s ease infinite; /* Slower and smoother animation */
+}
+
+/* Define the animation for the slideshow */
+@keyframes slide {
+    0% {
+        margin-left: 0px;
+    }
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-100% * 1);
+    }
+    60% {
+        margin-left: calc(-100% * 2);
+    }
+    80% {
+        margin-left: calc(-100% * 3);
+    }
+    100% {
+        margin-left: calc(-100% * 4);
+    }
+}
+
+/* Styling for images inside each slide */
+.slide img {
+    height: 100%; /* Ensures all images take up the full height */
+    width: 100%;  /* Stretch to fit the full width of the slide */
+    object-fit: cover; /* Ensures the image covers the slide without stretching */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow for more depth */
+    transition: transform 0.5s ease; /* Smoother transition for hover effects */
+}
+
+/* Add a hover effect to enlarge images */
+.slide:hover img {
+    transform: scale(1.08); /* More prominent zoom on hover */
+}
+
+/* Additional styling for text overlay */
+.slide h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #ffffff; /* Bright white text */
+    font-size: 2.5rem; /* Bigger text size */
+    font-family: 'Poppins', sans-serif; /* Modern font for a professional look */
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.6); /* Stronger shadow for readability */
+    letter-spacing: 1px; /* Slight letter spacing for clarity */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation for text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #slideshow {
+        height: 350px; /* Adjust height for tablets */
+    }
+
+    .slide h1 {
+        font-size: 1.8rem; /* Smaller text for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    #slideshow {
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    .slide h1 {
+        font-size: 1.5rem; /* Smaller text for mobile */
+    }
+}
