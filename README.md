@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+##INSTALLTHIS IN TERMINAL
+npm install @splinetool/react-spline
+
 In the project directory, you can run:
 
 ### `npm start`
