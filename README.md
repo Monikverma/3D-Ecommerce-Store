@@ -1,10 +1,12 @@
+ https://monikverma.github.io/3D-Ecommerce-Store/ live at this  url
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-##INSTALLTHIS IN TERMINAL
+##INSTALL THIS IN TERMINAL
 npm install @splinetool/react-spline
 
 In the project directory, you can run:
